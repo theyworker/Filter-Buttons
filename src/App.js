@@ -51,7 +51,7 @@ const App = () => {
         <>
            {/* {filtersArray.map((filter,index)=>assignFilter(filter.label, filter.type, filter.value))} */}
            <RangeSelector rangeMin={0} rangeMax={100} selectedMin={15}
-           selectedMax={85} units="$"/>
+           selectedMax={85} units="$" callback={(r)=>console.log(r)}/>
         </>
     );
 };
