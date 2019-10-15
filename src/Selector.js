@@ -9,24 +9,25 @@ const Selector = ({
         isMultiSelect ? 
         selectedArray : selectedValue
     );
+    
     const generateButtons = (val, index) => {
         if (isMultiSelect) {
             return selected[index] ? (
-                <Button primary flat onClick={()=> onChange(index)}>
+                <Button primary flat onClick={()=> onChange(index)} key={index}>
                     {val}
                 </Button>
             ) : (
-                    <Button secondary flat onClick={()=> onChange(index)}>
+                    <Button secondary flat onClick={()=> onChange(index)} key={index}>
                         {val}
                     </Button>
                 );
         }
         return index === selected ? (
-            <Button primary flat onClick={() => onChange(index)}>
+            <Button primary flat onClick={() => onChange(index)} key={index}>
                 {val}
             </Button>
         ) : (
-                <Button flat onClick={() => onChange(index)}>
+                <Button flat onClick={() => onChange(index)} key={index}>
                     {val}
                 </Button>
             );
