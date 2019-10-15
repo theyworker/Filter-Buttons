@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Filter from "./Filter";
+import RangeSelector from './RangeSelector'
 
 const App = () => {
     let values = [
@@ -48,7 +49,9 @@ const App = () => {
     }
     return (
         <>
-           {filtersArray.map((filter,index)=>assignFilter(filter.label, filter.type, filter.value))}
+           {/* {filtersArray.map((filter,index)=>assignFilter(filter.label, filter.type, filter.value))} */}
+           <RangeSelector rangeMin={0} rangeMax={100} selectedMin={15}
+           selectedMax={85} units="$"/>
         </>
     );
 };

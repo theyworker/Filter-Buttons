@@ -26,6 +26,7 @@ const Filter = ({ values, MultiSelect, buttonTitle }) => {
         buttonName={changeButtonName}
         selectedArray={filterSelected}
       />{" "}
+  
       <Button>Clear All</Button>
       <Button>Apply</Button>
     </>
