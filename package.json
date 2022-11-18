@@ -11,7 +11,7 @@
     "react-md": "^1.12.3",
     "react-responsive-carousel": "^3.1.50",
     "react-screen-orientation": "0.0.4",
-    "react-scripts": "3.1.2"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
